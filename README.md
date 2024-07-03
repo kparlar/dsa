@@ -49,7 +49,7 @@ If it goes through all the elements and none of them matches the key, then that 
 
 ### Illustration:
 
-![Illustration](./documents/img/search/linear_search-1.png)
+![Illustration](/documents/img/search/linear_search-1.png)
 
 ### Pseudo Code for Linear Search:
 
@@ -72,7 +72,7 @@ If it goes through all the elements and none of them matches the key, then that 
 
 ## Binary Search
 Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N).
-![Illustration](documents/img/search/binary_search-1.PNG?raw=true "Binary Search Illustration")
+![Illustration](/documents/img/search/binary_search-1.PNG?raw=true "Binary Search Illustration")
 
 ### Binary Search Algorithm
 * Divide the search space into two halves by finding the middle index “mid”.
@@ -84,7 +84,7 @@ Binary Search is defined as a searching algorithm used in a sorted array by repe
 * This process is continued until the key is found or the total search space is exhausted.
 
 ### Illustration of Binary Search:
-![Illustration](../../../../../../../documents/img/binary_search-2.PNG?raw=true "Binary Search Illustration")
+![Illustration](/documents/img/search/binary_search-2.PNG?raw=true "Binary Search Illustration")
 
 ### Pseudo Code for Binary Search:
 Below is the pseudo code for implementing binary search:
@@ -148,7 +148,7 @@ Below are the step-by-step explanation of working of Ternary Search:
 * Repeat the process with the reduced search space until the target is found or the search space becomes empty.
 * If the search space is empty and the target is not found, return a value indicating that the target is not present in the array.
 
-![Illustration](../../../../../../../documents/img/ternary_search-1.PNG?raw=true "Binary Search Illustration")
+![Illustration](/documents/img/search/ternary_search-1.PNG?raw=true "Binary Search Illustration")
 ### Complexity Analysis of Ternary Search:
 #### Time Complexity:
 * Best Case: O(1)
@@ -221,7 +221,8 @@ arr[] ==> Array where elements need to be searched
 x     ==> Element to be searched
 lo    ==> Starting index in arr[]
 hi    ==> Ending index in arr[]
-![Equation](documents/img/interpolation_search-1.PNG?raw=true "Interpolation Search Equation")      
+
+![Interpolation Search Equation](/documents/img/search/interpolation_search-1.PNG?raw=true "Interpolation Search Equation")      
 
 There are many different interpolation methods and one such is known as linear interpolation. Linear interpolation takes two data points which we assume as (x1,y1) and (x2,y2) and the formula is :  at point(x,y).
 This algorithm works in a way we search for a word in a dictionary. The interpolation search algorithm improves the binary search algorithm.  The formula for finding a value is: K = data-low/high-low.

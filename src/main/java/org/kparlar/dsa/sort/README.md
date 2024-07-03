@@ -21,23 +21,23 @@ Lets consider the following array as an example: arr[] = {64, 25, 12, 22, 11}
 #### First pass:
 * For the first position in the sorted array, the whole array is traversed from index 0 to 4 sequentially. The first position where 64 is stored presently, after traversing whole array it is clear that 11 is the lowest value.
 * Thus, replace 64 with 11. After one iteration 11, which happens to be the least value in the array, tends to appear in the first position of the sorted list.
-![Select Sort 1](../../../../../../../documents/img/selection_sort-1.PNG?raw=true "Selection Sort 1")
+![Select Sort 1](/documents/img/sort/selection_sort-1.png?raw=true "Selection Sort 1")
 #### Second Pass:
 * For the second position, where 25 is present, again traverse the rest of the array in a sequential manner.
 * After traversing, we found that 12 is the second lowest value in the array and it should appear at the second place in the array, thus swap these values.
-![Select Sort 2](../../../../../../../documents/img/selection_sort-2.PNG?raw=true "Selection Sort 2")
+![Select Sort 2](/documents/img/sort/selection_sort-2.png?raw=true "Selection Sort 2")
 #### Third Pass:
 * Now, for third place, where 25 is present again traverse the rest of the array and find the third least value present in the array.
 * While traversing, 22 came out to be the third least value and it should appear at the third place in the array, thus swap 22 with element present at third position.
-![Select Sort 3](../../../../../../../documents/img/selection_sort-3.PNG?raw=true "Selection Sort 3")
+![Select Sort 3](/documents/img/sort/selection_sort-3.png?raw=true "Selection Sort 3")
 #### Fourth pass:
 * Similarly, for fourth position traverse the rest of the array and find the fourth least element in the array
 * As 25 is the 4th lowest value hence, it will place at the fourth position.
-![Select Sort 4](../../../../../../../documents/img/selection_sort-4.PNG?raw=true "Selection Sort 4")
+![Select Sort 4](/documents/img/sort/selection_sort-4.png?raw=true "Selection Sort 4")
 #### Fifth Pass:
 * At last the largest value present in the array automatically get placed at the last position in the array
 * The resulted array is the sorted array.
-![Select Sort 5](../../../../../../../documents/img/selection_sort-5.PNG?raw=true "Selection Sort 5")
+![Select Sort 5](/documents/img/sort/selection_sort-5.png?raw=true "Selection Sort 5")
 
 ### Complexity Analysis of Selection Sort
 * Time Complexity: The time complexity of Selection Sort is O(N2) as there are two nested loops:
@@ -95,13 +95,13 @@ This process is then continued to find the second largest and place it and so on
 Input: arr[] = {6, 0, 3, 5}
 #### First Pass:
 The largest element is placed in its correct position, i.e., the end of the array.
-![Bubble Sort 1](../../../../../../../documents/img/bubble_sort-1.PNG?raw=true "Bubble Sort 1")
+![Bubble Sort 1](/documents/img/sort/bubble_sort-1.png?raw=true "Bubble Sort 1")
 #### Second Pass:
 Place the second largest element at correct position
-![Bubble Sort 2](../../../../../../../documents/img/bubble_sort-2.PNG?raw=true "Bubble Sort 2")
+![Bubble Sort 2](/documents/img/sort/bubble_sort-2.png?raw=true "Bubble Sort 2")
 #### Third Pass:
 Place the remaining two elements at their correct positions.
-![Bubble Sort 3](../../../../../../../documents/img/bubble_sort-3.PNG?raw=true "Bubble Sort 3")
+![Bubble Sort 3](/documents/img/sort/bubble_sort-3.png?raw=true "Bubble Sort 3")
 * Total no. of passes: n-1
 * Total no. of comparisons: n*(n-1)/2
 
@@ -121,7 +121,7 @@ To achieve insertion sort, follow these steps:
 
 ### Working of Insertion Sort Algorithm
 Consider an array having elements : {23, 1, 10, 5, 2}
-![Insertion Sort 1](../../../../../../../documents/img/insertion_sort-1.PNG?raw=true "Insertion Sort 1")
+![Insertion Sort 1](/documents/img/sort/insertion_sort-1.png?raw=true "Insertion Sort 1")
 #### First Pass:
 * Current element is 23
 * The first element in the array is assumed to be sorted.
@@ -172,7 +172,7 @@ and partitions the given array around the picked pivot by placing the pivot in i
 The key process in quickSort is a partition() . The target of partitions is to place the pivot (any element can be chosen to be a pivot) at its correct position in the sorted array and put all smaller elements to the left of the pivot, and all greater elements to the right of the pivot.
 
 Partition is done recursively on each side of the pivot after the pivot is placed in its correct position and this finally sorts the array.
-![Quick Sort 1](../../../../../../../documents/img/quick_sort-1.PNG?raw=true "Quick Sort 1")
+![Quick Sort 1](/documents/img/sort/quick_sort-1.png?raw=true "Quick Sort 1")
 ### Choice of Pivot:
 There are many different choices for picking pivots.
 * Always pick the first element as a pivot .
@@ -185,22 +185,22 @@ While traversing, if we find a smaller element, we swap the current element with
 Let us understand the working of partition and the Quick Sort algorithm with the help of the following example:
 * Consider: arr[] = {10, 80, 30, 90, 40}.
 * Compare 10 with the pivot and as it is less than pivot arrange it accordingly.
-![Quick Sort 2](../../../../../../../documents/img/quick_sort-2.PNG?raw=true "Quick Sort 2")
+![Quick Sort 2](/documents/img/sort/quick_sort-2.png?raw=true "Quick Sort 2")
 * Compare 80 with the pivot. It is greater than pivot.
-![Quick Sort 3](../../../../../../../documents/img/quick_sort-3.PNG?raw=true "Quick Sort 3")
+![Quick Sort 3](/documents/img/sort/quick_sort-3.png?raw=true "Quick Sort 3")
 * Compare 30 with pivot. It is less than pivot so arrange it accordingly.
-![Quick Sort 4](../../../../../../../documents/img/quick_sort-4.PNG?raw=true "Quick Sort 4")
+![Quick Sort 4](/documents/img/sort/quick_sort-4.png?raw=true "Quick Sort 4")
 * Compare 90 with the pivot. It is greater than the pivot.
-![Quick Sort 5](../../../../../../../documents/img/quick_sort-5.PNG?raw=true "Quick Sort 5")
+![Quick Sort 5](/documents/img/sort/quick_sort-5.png?raw=true "Quick Sort 5")
 * Arrange the pivot in its correct position.
-![Quick Sort 6](../../../../../../../documents/img/quick_sort-6.PNG?raw=true "Quick Sort 6")
+![Quick Sort 6](/documents/img/sort/quick_sort-6.png?raw=true "Quick Sort 6")
 ### Illustration of Quicksort
 As the partition process is done recursively, it keeps on putting the pivot in its actual position in the sorted array. Repeatedly putting pivots in their actual position makes the array sorted.
 Follow the below images to understand how the recursive implementation of the partition algorithm helps to sort the array.
 * Initial partition on the main array:
-![Quick Sort 7](../../../../../../../documents/img/quick_sort-7.PNG?raw=true "Quick Sort 7")
+![Quick Sort 7](/documents/img/sort/quick_sort-7.png?raw=true "Quick Sort 7")
 * Partitioning of the subarrays:
-![Quick Sort 8](../../../../../../../documents/img/quick_sort-8.PNG?raw=true "Quick Sort 8")
+![Quick Sort 8](/documents/img/sort/quick_sort-8.png?raw=true "Quick Sort 8")
 
 Quick Sort is a crucial algorithm in the industry, but there are other sorting algorithms that may be more optimal in different cases.
 Complexity Analysis of Quick Sort :
@@ -236,10 +236,10 @@ Here’s a step-by-step explanation of how merge sort works:
 ### Illustration of Merge Sort:
 Let’s sort the array or list [38, 27, 43, 10] using Merge Sort
 
-![Merge Sort 1](../../../../../../../documents/img/merge_sort-1.PNG?raw=true "Merge Sort 1")
-![Merge Sort 2](../../../../../../../documents/img/merge_sort-2.PNG?raw=true "Merge Sort 2")
-![Merge Sort 3](../../../../../../../documents/img/merge_sort-3.PNG?raw=true "Merge Sort 3")
-![Merge Sort 4](../../../../../../../documents/img/merge_sort-4.PNG?raw=true "Merge Sort 4")
+![Merge Sort 1](/documents/img/sort/merge_sort-1.png?raw=true "Merge Sort 1")
+![Merge Sort 2](/documents/img/sort/merge_sort-2.png?raw=true "Merge Sort 2")
+![Merge Sort 3](/documents/img/sort/merge_sort-3.png?raw=true "Merge Sort 3")
+![Merge Sort 4](/documents/img/sort/merge_sort-4.png?raw=true "Merge Sort 4")
 Let’s look at the working of above example:
 #### Divide:
 * [38, 27, 43, 10] is divided into [38, 27 ] and [43, 10] .
